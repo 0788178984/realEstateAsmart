@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASMART Real Estate | Virtual Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-estate"></i>
+            <span>AsmartVista</span>
+        </div>
+        <div class="nav-links">
+            <a href="#featured" class="active">Featured</a>
+            <a href="#tours">Virtual Tours</a>
+            <a href="#locations">Locations</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Experience Luxury Living in 360°</h1>
+            <p>Explore premium properties from the comfort of your home</p>
+            <button class="cta-button">Start Virtual Tour</button>
+        </div>
+    </header>
+
+    <!-- Featured Properties Section -->
+    <section id="featured" class="featured-properties">
+        <h2>Featured Properties</h2>
+        <div class="property-grid">
+            <!-- Property Card 1 -->
+            <div class="property-card">
+                <div class="property-image">
+                    <!-- 360° Tour iframe - Using Kuula.co embed -->
+                    <iframe 
+                        id="tourFrame1"
+                        width="100%" 
+                        height="250"
+                        frameborder="0" 
+                        allow="xr-spatial-tracking; gyroscope; accelerometer"
+                        allowfullscreen 
+                        scrolling="no" 
+                        src="https://kuula.co/share/5WJtr?logo=1&info=1&fs=1&vr=0&zoom=1&thumbs=1">
+                    </iframe>
+                    <!-- Permissions for VR/360° functionality are specified in the allow attribute above -->
+                    <!-- Price tag overlay -->
+                    <span class="price">$2,500,000</span>
+                    <!-- 360° view button - Triggers fullscreen mode -->
+                    <button class="view-360-btn" onclick="document.getElementById('tourFrame1').requestFullscreen();">
+                        <i class="fas fa-vr-cardboard"></i> View in 360°
+                    </button>
+                </div>
+                <div class="property-info">
+                    <h3>Modern Luxury Villa</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Beverly Hills, CA</p>
+                    <div class="specs">
+                        <span><i class="fas fa-bed"></i> 5 Beds</span>
+                        <span><i class="fas fa-bath"></i> 4 Baths</span>
+                        <span><i class="fas fa-ruler-combined"></i> 4,500 sqft</span>
+                    </div>
+                    <!-- Alternative tour button - Also triggers fullscreen mode -->
+                    <button class="tour-button" onclick="document.getElementById('tourFrame1').requestFullscreen();">View 360° Tour</button>
+                </div>
+            </div>
+
+            <!-- Property Card 2 -->
+            <div class="property-card">
+                <div class="property-image">
+                    <!-- 360° Tour iframe - Different property view -->
+                    <iframe 
+                        id="tourFrame2"
+                        width="100%" 
+                        height="250"
+                        frameborder="0" 
+                        allow="xr-spatial-tracking; gyroscope; accelerometer"
+                        allowfullscreen 
+                        scrolling="no" 
+                        src="https://kuula.co/share/NJjqq?logo=0&info=1&fs=1&vr=0&sd=1&thumbs=1">
+                    </iframe>
+                    <!-- Price tag overlay -->
+                    <span class="price">$1,800,000</span>
+                    <!-- 360° view button - Triggers fullscreen mode -->
+                    <button class="view-360-btn" onclick="document.getElementById('tourFrame2').requestFullscreen();">
+                        <i class="fas fa-vr-cardboard"></i> View in 360°
+                    </button>
+                </div>
+                <div class="property-info">
+                    <h3>Skyline Penthouse</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Manhattan, NY</p>
+                    <div class="specs">
+                        <span><i class="fas fa-bed"></i> 3 Beds</span>
+                        <span><i class="fas fa-bath"></i> 2.5 Baths</span>
+                        <span><i class="fas fa-ruler-combined"></i> 2,800 sqft</span>
+                    </div>
+                    <!-- Alternative tour button - Also triggers fullscreen mode -->
+                    <button class="tour-button" onclick="document.getElementById('tourFrame2').requestFullscreen();">View 360° Tour</button>
+                </div>
+            </div>
+
+            <!-- Property Card 3 -->
+            <div class="property-card">
+                <div class="property-image">
+                    <!-- 360° Tour iframe - Different property view -->
+                    <iframe 
+                        id="tourFrame3"
+                        width="100%" 
+                        height="250"
+                        frameborder="0" 
+                        allow="xr-spatial-tracking; gyroscope; accelerometer"
+                        allowfullscreen 
+                        scrolling="no" 
+                        src="https://kuula.co/share/NRc26?logo=1&info=1&fs=1&vr=0&zoom=1&thumbs=1">
+                    </iframe>
+                    <!-- Price tag overlay -->
+                    <span class="price">$3,200,000</span>
+                    <!-- 360° view button - Triggers fullscreen mode -->
+                    <button class="view-360-btn" onclick="document.getElementById('tourFrame3').requestFullscreen();">
+                        <i class="fas fa-vr-cardboard"></i> View in 360°
+                    </button>
+                </div>
+                <div class="property-info">
+                    <h3>Waterfront Estate</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Miami Beach, FL</p>
+                    <div class="specs">
+                        <span><i class="fas fa-bed"></i> 6 Beds</span>
+                        <span><i class="fas fa-bath"></i> 5.5 Baths</span>
+                        <span><i class="fas fa-ruler-combined"></i> 6,200 sqft</span>
+                    </div>
+                    <!-- Alternative tour button - Also triggers fullscreen mode -->
+                    <button class="tour-button" onclick="document.getElementById('tourFrame3').requestFullscreen();">View 360° Tour</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Schedule a Virtual Tour</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <select id="propertySelect" required>
+                    <option value="">Select Property</option>
+                    <option value="1">Modern Luxury Villa</option>
+                    <option value="2">Skyline Penthouse</option>
+                    <option value="3">Waterfront Estate</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea id="message" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Schedule Tour</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Asmart Real Estate</h3>
+                <p>Experience luxury living through our immersive virtual tours</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> (256) 779-654-710</p>
+                <p><i class="fas fa-envelope"></i> info@asmart.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=https://wa.me/256779654710><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/256779654710"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Asmart Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
